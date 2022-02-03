@@ -1,0 +1,119 @@
+/*create background */
+body{
+    background-color: lightsteelblue;
+    background-image: url("Daco_5350998.png");
+    background-size: 300px;
+    background-repeat: space;
+}
+/*create grid ofor h1*/
+.item1 {
+    grid-area: header;
+    text-align: center;
+    
+}
+.item2{
+    grid-area: main;
+    text-align: center;
+    font-size: 25px;
+    font-style: italic;
+    
+}
+.heading {
+    display: grid;
+    grid-template-areas: 
+    'header header header'
+    'main main main';
+    padding: 5px;
+
+}
+/*create grid for rules*/
+.item3 {
+    grid-area: 2;
+}
+/* create links for img of rock paper scissors*/
+.item4 {
+    grid-area: 5;
+    
+}
+.item5 {
+    width: 40%;
+}
+.rules {
+    display: grid;
+    grid-template-areas: 
+    '1 2 3'
+    '4 5 6';
+    text-align: center;
+    
+}
+/*create grid  for weapons*/
+.weapons {
+    display: grid;
+    grid-template-areas: '1 2 3';
+    text-align: center;
+}
+.rock {
+    grid-area: 1;
+}
+.rock2 {
+    width: 200px;
+    height: 200px;
+    font-size: x-large;
+    font-style: oblique;
+    border-radius: 5%;
+    background-color: tomato;
+    border-color: tomato;
+}
+.paper {
+    grid-area: 2;
+}
+.paper2 {
+    width: 200px;
+    height: 200px;
+    font-size: x-large;
+    font-style: oblique;
+    border-radius: 5%;
+    background-color: lightseagreen;
+    border-color: lightseagreen;
+}
+.scissors {
+    grid-area: 3;
+}
+.scissors2 {
+    width: 200px;
+    height: 200px;
+    font-size: x-large;
+    font-style: oblique;
+    border-radius: 5%;
+    background-color: yellow;
+    border-color: yellow;
+}
+/*create grid for scoreboard*/
+.scoreboard {
+    display: grid;
+    grid-template-areas: 
+    'header header' 
+    'menu main';
+    text-align: center;
+}
+.scoreboard_name {
+    grid-area: header;
+}
+.player {
+    font-size: 50px;
+    color: red;
+}
+.computer {
+    font-size: 50px;
+    color: blue;
+}
+.scoreboard_1 {
+    grid-area: menu;
+    font-size: 50px;
+    color: red;
+}
+.scoreboard_2 {
+    grid-area: main;
+    font-size: 50px;
+    color: blue;
+}
